@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" width="420" height="315">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eef3f8"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+  <rect width="420" height="315" rx="0" fill="url(#g)"/>
+  <circle cx="332" cy="58" r="78" fill="#6f8faa" opacity="0.13"/>
+  <circle cx="82" cy="252" r="64" fill="#6f8faa" opacity="0.10"/>
+  <path d="M150 80 H230 L238 235 H203 L190 135 L177 235 H142 Z" fill="white" stroke="#6f8faa" stroke-width="8" stroke-linejoin="round"/><path d="M152 112h76" stroke="#6f8faa" stroke-width="7"/>
+  <text x="28" y="272" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" font-weight="700" fill="#172033">冰感垂顺阔腿裤</text>
+  <text x="28" y="296" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="14" fill="#516071">裤装 · 商品示意图</text>
+</svg>

@@ -1,0 +1,52 @@
+# Disposable, isolated target for Agent offline evaluation. Never point eval/runner.py at docker-compose.yml.
+services:
+  eval_db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: eval-only-password
+      POSTGRES_DB: shopcare_eval
+    ports:
+      - "15433:5432"
+    tmpfs:
+      - /var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d shopcare_eval"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  eval_redis:
+    image: redis:7-alpine
+    ports:
+      - "16380:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  eval_app:
+    build:
+      context: ./backend
+    env_file:
+      - ./backend/.env
+    environment:
+      POSTGRES_SERVER: eval_db
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: shopcare_eval
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: eval-only-password
+      REDIS_HOST: eval_redis
+      REDIS_PORT: 6379
+      AGENT_EVAL_MODE: "true"
+      AGENT_PROMPT_VARIANT: "${AGENT_PROMPT_VARIANT:-A}"
+      EVAL_ISOLATED: "true"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 18001 --no-access-log
+    ports:
+      - "18002:18001"
+    depends_on:
+      eval_db:
+        condition: service_healthy
+      eval_redis:
+        condition: service_healthy

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" width="420" height="315">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1f5f9"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+  <rect width="420" height="315" rx="0" fill="url(#g)"/>
+  <circle cx="332" cy="58" r="78" fill="#7b91aa" opacity="0.13"/>
+  <circle cx="82" cy="252" r="64" fill="#7b91aa" opacity="0.10"/>
+  <path d="M96 190 C136 185 154 150 184 126 L224 170 C252 174 274 188 284 212 H96 Z" fill="white" stroke="#7b91aa" stroke-width="8" stroke-linejoin="round"/><path d="M178 156l42 42" stroke="#7b91aa" stroke-width="6"/>
+  <text x="28" y="272" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" font-weight="700" fill="#172033">云感缓震休闲运动鞋</text>
+  <text x="28" y="296" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="14" fill="#516071">运动鞋 · 商品示意图</text>
+</svg>

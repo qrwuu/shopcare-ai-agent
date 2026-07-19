@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" width="420" height="315">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f8fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+  <rect width="420" height="315" rx="0" fill="url(#g)"/>
+  <circle cx="332" cy="58" r="78" fill="#8da0b8" opacity="0.13"/>
+  <circle cx="82" cy="252" r="64" fill="#8da0b8" opacity="0.10"/>
+  <path d="M124 98 L160 78 H220 L256 98 L238 140 L224 132 V232 H156 V132 L142 140 Z" fill="white" stroke="#8da0b8" stroke-width="8" stroke-linejoin="round"/><path d="M166 86 C176 108 204 108 214 86" fill="none" stroke="#8da0b8" stroke-width="6"/>
+  <text x="28" y="272" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" font-weight="700" fill="#172033">免烫牛津纺通勤衬衫</text>
+  <text x="28" y="296" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="14" fill="#516071">衬衫 · 商品示意图</text>
+</svg>

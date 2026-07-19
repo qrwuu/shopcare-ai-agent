@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="苹果 USB-C 快充充电器">
+  <rect width="600" height="600" rx="48" fill="#f4f1ff"/>
+  <rect x="188" y="160" width="224" height="268" rx="38" fill="#fff" stroke="#a48be8" stroke-width="16"/>
+  <rect x="258" y="235" width="84" height="38" rx="16" fill="#8b73d6"/>
+  <path d="M246 160v-58M354 160v-58" stroke="#8b73d6" stroke-width="20" stroke-linecap="round"/>
+  <path d="M300 306l-38 65h34l-12 48 54-76h-34z" fill="#8268d1"/>
+  <text x="300" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#372c59">苹果 USB-C 快充充电器</text>
+  <text x="300" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#685a91">20W / 35W 模拟商品</text>
+</svg>

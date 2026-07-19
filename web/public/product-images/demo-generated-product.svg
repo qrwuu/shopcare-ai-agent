@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="演示模拟商品">
+  <rect width="600" height="600" rx="48" fill="#edf6ff"/>
+  <rect x="150" y="150" width="300" height="270" rx="40" fill="#fff" stroke="#63b5dc" stroke-width="16"/>
+  <path d="M230 280h140M300 210v140" stroke="#63b5dc" stroke-width="28" stroke-linecap="round"/>
+  <text x="300" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#266a88">演示模拟商品</text>
+  <text x="300" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#57839a">按当前对话动态生成</text>
+</svg>
