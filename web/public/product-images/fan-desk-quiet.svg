@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="静音循环桌面风扇">
+  <rect width="600" height="600" rx="48" fill="#eef8ff"/>
+  <circle cx="300" cy="265" r="170" fill="#d8edf7" stroke="#5aa9c9" stroke-width="18"/>
+  <circle cx="300" cy="265" r="28" fill="#4f9cbd"/>
+  <path d="M300 237c-17-85 42-123 80-98 31 21 5 104-53 126M328 265c85-17 123 42 98 80-21 31-104 5-126-53M300 293c17 85-42 123-80 98-31-21-5-104 53-126M272 265c-85 17-123-42-98-80 21-31 104-5 126 53" fill="#77c8e6"/>
+  <path d="M270 430h60l20 98h-100z" fill="#6aaec8"/>
+  <rect x="200" y="520" width="200" height="34" rx="17" fill="#4b91af"/>
+  <text x="300" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#3f7891">静音循环桌面风扇</text>
+</svg>

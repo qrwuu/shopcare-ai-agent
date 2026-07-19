@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" width="420" height="315">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff7df"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+  <rect width="420" height="315" fill="url(#g)"/>
+  <circle cx="330" cy="62" r="80" fill="#d0a63f" opacity="0.13"/>
+  <path d="M120 174 C132 112 248 112 260 174 Z" fill="white" stroke="#d0a63f" stroke-width="8"/>
+  <path d="M82 184 C145 164 235 164 298 184" fill="none" stroke="#d0a63f" stroke-width="14" stroke-linecap="round"/>
+  <path d="M142 150 C164 134 216 134 238 150" fill="none" stroke="#d0a63f" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <text x="28" y="272" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" font-weight="700" fill="#172033">大檐遮阳防晒渔夫帽</text>
+  <text x="28" y="296" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="14" fill="#516071">防晒帽 · 商品示意图</text>
+</svg>

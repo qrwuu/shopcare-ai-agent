@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" width="420" height="315">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edf9ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+  <rect width="420" height="315" rx="0" fill="url(#g)"/>
+  <circle cx="332" cy="58" r="78" fill="#72b9dc" opacity="0.13"/>
+  <circle cx="82" cy="252" r="64" fill="#72b9dc" opacity="0.10"/>
+  <rect x="145" y="86" width="90" height="150" rx="18" fill="white" stroke="#72b9dc" stroke-width="8"/><rect x="164" y="60" width="52" height="34" rx="8" fill="#72b9dc"/><circle cx="190" cy="158" r="33" fill="#72b9dc" opacity="0.18"/><path d="M166 158h48M176 176h28" stroke="#72b9dc" stroke-width="7" stroke-linecap="round"/>
+  <text x="28" y="272" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" font-weight="700" fill="#172033">水感保湿防晒霜 SPF50+</text>
+  <text x="28" y="296" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="14" fill="#516071">防晒霜 · 商品示意图</text>
+</svg>
