@@ -187,6 +187,7 @@ docker compose -f ../docker-compose.eval.yml down
 
 ## 文档导航
 
+- [店小服 PRD（2025.09—2025.11）](店小服-AI电商客服与售后Agent-PRD.md)：新版产品基线，说明消费者与审核员双端流程、受控业务执行、售后状态机、安全边界、验收标准及已嵌入的界面示例。
 - [产品需求文档（PRD）](docs/ShopCare_PRD_v1.0.md)：竞品调研、用户需求、功能规则与验收标准
 - [项目总览](docs/PROJECT_OVERVIEW.md)：产品定位、核心流程、系统设计与评测结果
 - [后端说明](backend/README.md)：服务模块与接口入口
