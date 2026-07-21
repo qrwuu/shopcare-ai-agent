@@ -1,52 +1,36 @@
 # ShopCare Backend
 
-ShopCare 的后端服务负责把电商对话请求转化为可验证、可追溯的业务动作。它将 Agent 的语言理解能力与订单、售后、审核、通知等确定性服务分层，避免模型直接修改高风险业务数据。
+ShopCare 后端把消费者对话转化为可验证、可追踪的电商服务动作。模型用于理解、追问与生成说明；订单、售后、审核、附件和通知服务负责业务事实、权限与状态写入。
+
+面向产品体验与文档入口：[README](../README.md) · [完整 PRD](../docs/ShopCare_PRD.md) · [部署说明](../docs/DEPLOYMENT.md) · [评测说明](eval/README.md)。
 
 ## 服务职责
 
-- 用户认证、会话管理与消费者数据隔离
-- 商品目录与平台政策咨询
-- 订单、物流、地址、取消与物流拦截服务
-- 售后状态机：退货退款、仅退款、换货、少件、错发、破损与凭证补充
-- 人工审核队列、审核记录、通知与原对话同步
-- SSE 聊天输出与 WebSocket 状态推送
-- 版本化 Agent 回归评测与执行 telemetry
-
-## 核心模块
-
-```text
-app/
-├── api/v1/          # Auth、Chat、Customer、Conversations、Admin、Status、WebSocket
-├── services/        # Agent 编排、上下文、订单/售后、目录、政策、权限与 telemetry
-├── graph/           # LangGraph 兼容工作流与 RAG 节点
-├── models/          # SQLModel 数据模型
-├── tasks/           # Celery 异步任务
-└── websocket/       # 连接与事件管理
-```
+- 账号认证、会话与消费者数据隔离
+- 商品目录与模拟平台政策查询
+- 本人订单、物流、改址、取消与拦截处理
+- 售后申请、凭证、退货单号、时间线与通知
+- 人工审核队列、审核结果与消费者端状态同步
+- SSE 对话响应、WebSocket 状态推送与离线评测
 
 ## API 入口
 
-服务默认运行在 `http://localhost:18001`：
+默认地址：`http://localhost:18001`。
 
 - 健康检查：`GET /health`
-- OpenAPI 文档：`/docs`
 - 认证：`/api/v1/login`、`/api/v1/register`、`/api/v1/me`
-- 对话：`POST /api/v1/chat`、`/api/v1/customer/chat-sessions`
+- 对话与会话：`/api/v1/chat`、`/api/v1/customer/chat-sessions`
 - 消费者资源：`/api/v1/customer/orders`、`/refunds`、`/attachments`、`/notifications`
 - 审核工作台：`/api/v1/admin/tasks`
-- 实时订阅：`/api/v1/ws/*`
+- 实时状态：`/api/v1/ws/*`
 
-## 本地开发
+## 本地运行
 
-完整启动方式、环境变量说明和演示账号请查看仓库根目录 [README](../README.md)。
-
-后端服务启动前需配置 `backend/.env`，再在项目根目录执行：
+在项目根目录配置 `backend/.env` 后：
 
 ```bash
 docker compose up -d --build
 docker compose exec app python scripts/seed_data.py
 ```
 
-## 质量保障
-
-`eval/` 提供针对真实 HTTP/SSE 链路的隔离回归评测，覆盖商品、政策、订单、物流、售后、权限隔离、提示注入与关键动作确认。详见 [Agent 离线评测说明](eval/README.md)。
+完整配置、演示账号和评测隔离环境见 [部署说明](../docs/DEPLOYMENT.md)。
