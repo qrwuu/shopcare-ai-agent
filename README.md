@@ -8,6 +8,8 @@
 
 ShopCare 模拟一条电商客户服务链路：消费者咨询商品与平台规则、查询本人订单和物流、发起售后并补充凭证；审核员在工作台查看订单、对话、附件和历史记录后完成审核。
 
+🎬 **[3分钟看懂店小服 ShopCare](https://qrwuu.github.io/shopcare-ai-agent/project-intro.html?v=original-1080p)**
+
 核心问题是：**如何让 AI 客服理解自然语言，又能在正确订单、规则和状态边界内完成服务。**
 
 ## 产品设计
